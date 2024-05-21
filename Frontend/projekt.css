@@ -36,7 +36,7 @@ color: white;
   .container{  display: flex;
     justify-content: left;
     align-items: flex-end;
-    height: 25vh;
+  
 } 
 
 
@@ -45,3 +45,84 @@ color: white;
  display: flex;
 height: 50vh;
 } 
+
+.about {text-align: center;
+  justify-content: center;
+  font-size: 35px;
+  color: white;
+    }
+  
+h4,p  {color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+footer   {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  margin-top: auto;  
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+}
+
+.opcije { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  background-color: black;
+}
+
+.opcije img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.opcija p {color: white;
+  text-align: center;
+justify-content: center;
+display: flex;
+padding: 100px;
+}
+
+h5 {color: white;
+  text-align: center;
+justify-content: center;
+display: flex;
+font-size: large;
+padding: 100px;
+}
+
+/* Characters urđivanje*/
+
+.characters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responzivni raspored */
+    gap: 20px;
+    justify-items: center; /* Centriranje slika horizontalno */
+}
+
+.characters img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.characters p {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Responzivni stilovi */
+@media only screen and (max-width: 768px) {
+    .characters {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Prilagodljiva širina slika */
+    }
+}
