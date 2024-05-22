@@ -74,6 +74,8 @@ footer   {
   grid-template-columns: repeat(3, 1fr); 
   gap: 20px; 
   background-color: black;
+  padding: 100px;
+
 }
 
 .opcije img {
@@ -82,11 +84,8 @@ footer   {
   margin-bottom: 10px;
 }
 
-.opcija p {color: white;
-  text-align: center;
-justify-content: center;
-display: flex;
-padding: 100px;
+.opcije p{
+padding: 80px;
 }
 
 h5 {color: white;
@@ -95,6 +94,16 @@ justify-content: center;
 display: flex;
 font-size: large;
 padding: 100px;
+}
+
+.about1 {
+background-color: black;
+}
+
+.shop {
+display: grid;
+gap: 100px;
+margin: 50px;
 }
 
 /* Characters urđivanje*/
@@ -107,7 +116,7 @@ padding: 100px;
 }
 
 .characters img {
-  max-width: 100%;
+max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -120,9 +129,60 @@ padding: 100px;
 }
 
 
+
+
 /* Responzivni stilovi */
 @media only screen and (max-width: 768px) {
     .characters {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Prilagodljiva širina slika */
     }
+}
+
+/* Projekt Responzivnost */
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .video video {
+      width: 100%;
+      height: auto;
+  }
+
+  .opcije {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .opcije div {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1, h2, h3 {
+      font-size: 1.2em;
+      padding: 0 10px;
+  }
+
+  .video video {
+      width: 100%;
+      height: auto;
+  }
+
+  .container img {
+      width: 100%;
+      height: auto;
+  }
+
+  .opcije {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .opcije div {
+      max-width: 100%;
+  }
 }
