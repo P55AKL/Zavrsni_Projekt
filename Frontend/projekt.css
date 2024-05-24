@@ -111,11 +111,11 @@ margin: 50px;
 .characters {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responzivni raspored */
-    gap: 20px;
+    gap: 80px;
     justify-items: center; /* Centriranje slika horizontalno */
 }
 
-.characters img {
+  .characters img {
 max-width: 100%;
   height: auto;
   border-radius: 10px;

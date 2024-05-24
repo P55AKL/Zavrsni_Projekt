@@ -1,0 +1,22 @@
+{
+  "name": "zavr-ni_projekt",
+  "version": "1.0.0",
+  "description": "Game Site",
+  "main": "projekt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P55AKL/Zavrsni_Projekt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P55AKL/Zavrsni_Projekt/issues"
+  },
+  "homepage": "https://github.com/P55AKL/Zavrsni_Projekt#readme",
+  "dependencies": {
+    "mongoose": "^8.4.0"
+  }
+}
