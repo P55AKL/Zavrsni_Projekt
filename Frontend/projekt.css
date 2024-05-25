@@ -100,19 +100,79 @@ padding: 100px;
 background-color: black;
 }
 
-.shop {
-display: grid;
-gap: 100px;
-margin: 50px;
+/* shop*/
+.games {
+  display: flex;
+  align-items: center;
 }
+
+.velicina {
+  height:  500px;
+  width: 690px;
+  border-radius: 10px;
+  margin-right: 10px; 
+}
+
+.game  {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+ 
+.velicina2  {
+  height:  500px; 
+  width: 800px;
+  border-radius: 10px;
+  margin-right: 10px; 
+}
+ 
+.botun {
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+margin: 30px;
+}
+
+.botun:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.botun:active {
+  background-color: #004494;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+
+.zadnji {
+ background-color: black;
+
+}
+
+.ime {
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;}
+
+
 
 /* Characters urđivanje*/
 
 .characters {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responzivni raspored */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 80px;
-    justify-items: center; /* Centriranje slika horizontalno */
+    justify-items: center; 
 }
 
   .characters img {
@@ -130,11 +190,10 @@ max-width: 100%;
 
 
 
-
 /* Responzivni stilovi */
 @media only screen and (max-width: 768px) {
     .characters {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Prilagodljiva širina slika */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
     }
 }
 
