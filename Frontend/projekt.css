@@ -192,9 +192,7 @@ justify-content: center;
   }
 
 .igrica{ 
-
-  align-items: center;
-  justify-content: center;
+position: fixed;
   width: 400px;
   height: 400px;
 
@@ -279,5 +277,104 @@ max-width: 100%;
 
   .opcije div {
       max-width: 100%;
+  }
+}
+
+/* Responzivnost Shopa */
+ 
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ime {
+  text-align: center;
+}
+
+.igrica {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Prilagođavanje stila za ekrane širine 768px i veće */
+  .container {
+      padding: 0 50px;
+  }
+
+  .games {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .game {
+      width: 45%;
+  }
+}
+
+/* Responzivnost Projekta */
+
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video {
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.opcije {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opcije img {
+  width: 100%;
+  max-width: 400px; /* Postavljamo maksimalnu širinu slike */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.opcije h5, .opcije p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Prilagođavanje stila za ekrane širine 768px i veće */
+  .container {
+      padding: 0 50px;
+  }
+
+  .opcije {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: left;
+  }
+
+  .opcije img {
+      max-width: none; /* Uklanjamo maksimalnu širinu slike */
+      width: 30%;
+      margin-bottom: 0;
   }
 }
