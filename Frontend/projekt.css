@@ -19,7 +19,8 @@ ul{
   }
   
   li a:hover {
-    background-color: grey;
+    background-color: #007BFF;
+    border: none;
     
   }
 
